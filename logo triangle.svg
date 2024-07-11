@@ -1,0 +1,8 @@
+
+
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="transparent" />
+   <polygon points="300,60 540,540 60,540" fill="#ffff1a" />
+   <text x="50%" y="50%" font-size="80" fill="#0000ff" text-anchor="middle" dy=".3em">Hey</text>
+</svg>
+    
