@@ -48,16 +48,16 @@ const generateSVG = (answers) => {
     let shapeSVG;
     switch (answers.shape) {
         case 'circle':
-            shapeSVG = `<circle cx="50%" cy="50%" r="40%" fill="${answers.bgColor}" />`; 
+            shapeSVG = `<circle cx="${answers.width / 2}" cy="${answers.height / 2}" r="${Math.min(answers.width, answers.height) / 4}" fill="${answers.bgColor}" />`; 
             break;
         case 'square':
-            shapeSVG = `<square width="80%" height="80%" x="10%" y="10%" fill="${answers.bgColor}" />`;
+            shapeSVG = `<rect x="${answers.width * 0.1}" y="${answers.height * 0.1}" width="${answers.width * 0.8}" height="${answers.height * 0.8}" fill="${answers.bgColor}" />`;
             break;
         case 'triangle':
             shapeSVG = `<polygon points="${answers.width / 2},${answers.height * 0.1} ${answers.width * 0.9},${answers.height * 0.9} ${answers.width * 0.1},${answers.height * 0.9}" fill="${answers.bgColor}" />`;
             break;
     }
-    
+
     return `
 
 <svg width="${answers.width}" height="${answers.height}" xmlns="http://www.w3.org/2000/svg">

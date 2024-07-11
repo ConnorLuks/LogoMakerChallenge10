@@ -1,7 +1,7 @@
 
 
 <svg width="150" height="150" xmlns="http://www.w3.org/2000/svg">
-   <polygon points="75,15 135,135 15,135" fill="#FFFF00" />
-   <text x="50%" y="50%" font-size="20" fill="#ff3300" text-anchor="middle" dy=".3em">EGG</text>
+   <rect x="15" y="15" width="120" height="120" fill="#FFFF00" />
+   <text x="50%" y="50%" font-size="20" fill="#FF3000" text-anchor="middle" dy=".3em">EGG</text>
 </svg>
     
